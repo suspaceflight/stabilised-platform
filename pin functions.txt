@@ -1,0 +1,37 @@
+A0 - PWM0				AF2 - TIM2_CH1
+A1 - PWM1				AF2 - TIM2_CH2
+A2 - PWM2				AF2 - TIM2_CH3
+A3 - PWM3				AF2 - TIM2_CH4
+A4 - switch position indicator		GPI - with pull up
+A5 - not in use
+A6 - PWM4				AF1 - TIM3_CH1
+A7 - PWM5				AF1 - TIM3_CH2
+A8 - not in use
+A9 - UART1 TX				AF1 - USART1_TX
+A10- UART1 RX				AF1 - USART1_RX
+A11- not in use
+A12- not in use
+A13- programming data			left as default
+A14- programing clock			left as default
+A15- not in use
+
+B0 - IO1				GPIO- user configured
+B1 - IO2				GPIO- user configured
+B2 - IO3				GPIO- user configured
+B3 - SPI1 clock				AF0 - SPI1_SCK
+B4 - SPI1 MISO				AF0 - SPI1_MISO
+B5 - SPI1 MOSI				AF0 - SPI1_MOSI
+B6 - SPI1 chip select			GPO - push pull mode
+B7 - not in use
+B8 - I2C1 SCL				AF1 - I2C1_SCL
+B9 - I2C1 SDA				AF1 - I2C1_SDA
+B10- IO4				GPIO- user configured
+B11- not in use
+B12- SPI2 chip select			AF0 - SPI2_NSS
+B13- SPI2 clock				AF0 - SPI2_SCK
+B14- SPI2 MISO				AF0 - SPI2_MISO
+B15- SPI2 MOSI				AF0 - SPI2_MOSI
+
+C13- status0				GPO - push pull mode
+C14- status1				GPO - push pull mode
+C15- status2				GPO - push pull mode

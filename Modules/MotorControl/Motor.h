@@ -5,7 +5,9 @@ class Motor {
 public:
     Motor(uint8_t pwmPin, uint8_t in1Pin, uint8_t in2Pin);
     
-    setDirection(bool clockwise);
+    setActiveDirection(bool clockwise);
+    
+    disable();
     
 private:
 

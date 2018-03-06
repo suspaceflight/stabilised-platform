@@ -1,14 +1,19 @@
 #include "Motor.h"
 
+/**
+ * Allows for creation of Motor object without initialization.
+ */
+Motor::Motor() {}
+
 Motor::Motor(uint8_t pwmPin, uint8_t in1Pin, uint8_t in2Pin) {
     this->pwmPin = pwmPin;
     this->in1Pin = in1Pin;
     this->in2Pin = in2Pin;
-    
+
     pinMode(pwmPin, OUTPUT);
     pinMode(in1Pin, OUTPUT);
     pinMode(in2Pin, OUTPUT);
-    
+
     // Turn everything off.
     disable();
 }
@@ -26,5 +31,15 @@ Motor::setActiveDirection(bool clockwise) {
 Motor::disable() {
     digitalWrite(in1Pin, LOW);
     digitalWrite(in2Pin, LOW);
-    analogWrite(pwmPin, 0);    
+    analogWrite(pwmPin, 0);
 }
+
+Motor::setSpeed(uint8_t speed) {
+    analogWrite(pwmPin, speed);
+}
+
+Motor::setFloatSpeed(float speed) {
+    setActiveDirection(!(speed < 0));
+    setSpeed(floor(255 * fabs(speed)));
+}
+

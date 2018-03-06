@@ -39,6 +39,13 @@ Motor::setSpeed(uint8_t speed) {
 }
 
 Motor::setFloatSpeed(float speed) {
+    // TODO: Add logger and error message for these checks.
+    if (speed > 1) {
+        speed = 1;
+    }
+    if (speed < -1) {
+        speed = -1;
+    }
     setActiveDirection(!(speed < 0));
     setSpeed(floor(255 * fabs(speed)));
 }

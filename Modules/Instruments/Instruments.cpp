@@ -4,7 +4,10 @@
 
 #include "Instruments.h"
 
-Instruments::Instruments() {
+Instruments::Instruments() {}
+
+Instruments::Instruments(bool initialize) {
+    if (!initialize) return;
     Wire.begin();
 
     // Gyro initialization.

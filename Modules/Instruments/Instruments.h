@@ -17,7 +17,7 @@ class Instruments {
 public:
     Instruments();
 
-    Instruments(int baudRate);
+    Instruments(bool initialize);
 
     float getHeading();
     float getAltitude();

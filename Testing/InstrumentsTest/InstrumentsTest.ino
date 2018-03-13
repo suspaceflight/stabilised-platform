@@ -6,7 +6,7 @@ Instruments instruments;
 void setup() {
     Serial.begin(9600);
     Serial.println("Initializing...");
-    instruments = Instruments();
+    instruments = Instruments(true);
 }
 
 void loop() {

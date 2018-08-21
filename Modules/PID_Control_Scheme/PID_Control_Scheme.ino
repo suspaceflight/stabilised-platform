@@ -12,9 +12,9 @@ double timestep;
 
 Instruments instruments;
 Motor motor;
-uint8_t pwmPin = 10;
-uint8_t in1Pin = 9;
-uint8_t in2Pin = 8;
+uint8_t pwmPin = 9;
+uint8_t in1Pin = 8;
+uint8_t in2Pin = 7;
 
 float headingTarget = 180;
 

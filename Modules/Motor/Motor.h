@@ -1,5 +1,5 @@
-#ifndef QUADCOPTER_PROJECT_LOGGER_H
-#define QUADCOPTER_PROJECT_LOGGER_H
+#ifndef STABILISED_PLATFORM_MOTOR_H
+#define STABILISED_PLATFORM_MOTOR_H
 
 #include <Arduino.h>
 #include <math.h>
@@ -30,4 +30,4 @@ private:
     setSpeed(uint8_t speed);
 };
 
-#endif //QUADCOPTER_PROJECT_LOGGER_H
+#endif //STABILISED_PLATFORM_MOTOR_H

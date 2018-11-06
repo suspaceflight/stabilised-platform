@@ -11,8 +11,8 @@ Instruments::Instruments(bool initialize) {
     Wire.begin();
 
     // Gyro initialization.
-    gyro.init();
-    gyro.enableDefault();
+//    gyro.init();
+//    gyro.enableDefault();
 
     // Accelerometer and Magnetometer initialization.
     compass.init();
@@ -22,15 +22,15 @@ Instruments::Instruments(bool initialize) {
     compass.m_max = (LSM303::vector<int16_t>){+ 4515, + 4483, + 4265};
 
     // Altimeter initialization.
-    altimeter.settings.commInterface = I2C_MODE;
-    altimeter.settings.I2CAddress = 0x76;
-    altimeter.settings.runMode = 3; // 3, Normal mode
-    altimeter.settings.tStandby = 0; // 0, 0.5ms
-    altimeter.settings.filter = 0; // 0, filter off
-    altimeter.settings.tempOverSample = 1; //  tempOverSample  *1
-    altimeter.settings.pressOverSample = 1; // pressOverSample *1
-    altimeter.settings.humidOverSample = 1; // humidOverSample *1
-    altimeter.begin();
+//    altimeter.settings.commInterface = I2C_MODE;
+//    altimeter.settings.I2CAddress = 0x76;
+//    altimeter.settings.runMode = 3; // 3, Normal mode
+//    altimeter.settings.tStandby = 0; // 0, 0.5ms
+//    altimeter.settings.filter = 0; // 0, filter off
+//    altimeter.settings.tempOverSample = 1; //  tempOverSample  *1
+//    altimeter.settings.pressOverSample = 1; // pressOverSample *1
+//    altimeter.settings.humidOverSample = 1; // humidOverSample *1
+//    altimeter.begin();
 }
 
 float Instruments::getHeading() {
@@ -38,10 +38,10 @@ float Instruments::getHeading() {
     return compass.heading();
 }
 
-float Instruments::getAltitude() {
-    // All included to make reading work.
-    altimeter.readTempC();
-    altimeter.readFloatPressure();
-    altimeter.readFloatHumidity();
-    return altimeter.readFloatAltitudeMeters();
-}
+//float Instruments::getAltitude() {
+//    // All included to make reading work.
+//    altimeter.readTempC();
+//    altimeter.readFloatPressure();
+//    altimeter.readFloatHumidity();
+//    return altimeter.readFloatAltitudeMeters();
+//}

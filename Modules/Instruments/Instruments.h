@@ -7,7 +7,7 @@
 
 #include <Arduino.h>
 #include "SparkFunBME280.h"
-#include <L3G.h>
+//#include <L3G.h>
 #include <LSM303.h>
 
 #include <Wire.h>
@@ -20,11 +20,11 @@ public:
     Instruments(bool initialize);
 
     float getHeading();
-    float getAltitude();
+//    float getAltitude();
 
 private:
-    BME280 altimeter;
-    L3G gyro;
+//    BME280 altimeter;
+//    L3G gyro;
     LSM303 compass;
 };
 

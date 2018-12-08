@@ -1,0 +1,13 @@
+[Service]
+WorkingDirectory=/home/pi/PlatformCamera
+ExecStart=/usr/bin/python3 /home/pi/PlatformCamera/camera.py
+Restart=always
+StandardOutput=syslog
+StandardError=syslog
+SyslogIdentifier=platformcamera
+User=root
+Group=root
+#Type=oneshot
+Environment=NODE_ENV=production
+[Install]
+WantedBy=multi-user.target

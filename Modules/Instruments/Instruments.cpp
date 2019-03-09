@@ -18,8 +18,8 @@ Instruments::Instruments(bool initialize) {
     compass.init();
     compass.enableDefault();
 
-    compass.m_min = (LSM303::vector<int16_t>){-  805, - 1748, - 2332};
-    compass.m_max = (LSM303::vector<int16_t>){+ 4515, + 4483, + 4265};
+    compass.m_min = (LSM303::vector<int16_t>){- 4794, - 4082, - 4370};
+    compass.m_max = (LSM303::vector<int16_t>){+ 4181, + 4350, + 4098};
 
     // Altimeter initialization.
 //    altimeter.settings.commInterface = I2C_MODE;

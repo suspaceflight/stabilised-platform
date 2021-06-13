@@ -1,3 +1,5 @@
+## Legacy organisation, stabilised-platform repository has been moved to [SUSF-Robotics-and-Software](https://github.com/SUSF-Robotics-and-Software/stabilised-platform)
+
 ## Logger
 
 The Logger module is for SD writing. It has two main functions:
